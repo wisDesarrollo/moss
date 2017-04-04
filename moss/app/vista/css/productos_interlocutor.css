@@ -1,0 +1,30 @@
+#contenedor_formulario_productos{
+	margin: 0 auto;
+	font-size: 12px;
+	width: 80%;
+}
+
+#botones_producto_interlocutor{
+	text-align: center;
+}
+
+.elemento_producto{
+	padding: 5px;
+}
+
+#contenedor_productos_interlocutor li ul li{
+    display: inline-block;
+}
+
+#contenedor_productos_interlocutor li{
+    list-style: none;   
+    cursor: pointer;
+}
+
+.categoria_producto{
+	height: 22px;
+	line-height: 22px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}

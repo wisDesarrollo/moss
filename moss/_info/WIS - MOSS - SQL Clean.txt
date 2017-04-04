@@ -1,0 +1,10 @@
+TRUNCATE TABLE `pedido`;
+TRUNCATE TABLE `cuenta` ;
+TRUNCATE TABLE `pedido_item` ;
+TRUNCATE TABLE `transaccion` ;
+TRUNCATE TABLE `transaccion_item` ;
+
+TRUNCATE TABLE  `producto_stock`;
+TRUNCATE TABLE  `producto`;
+TRUNCATE TABLE  `caja`;
+TRUNCATE TABLE  `unidad_medida`;
