@@ -71,11 +71,7 @@ class comandasHTML {
 								}
 								?>
 							</table>
-							<button onclick="despachar_pedido(<?php echo $id_pedido; ?>)" class="comanda-button green-button">
-								<span class="glyphicon glyphicon-ok"></span>
-							</button>
-							<button onclick="cancelar_pedido(<?php echo $id_pedido; ?>,<?php echo $datos_pedidos[0]['Mesa'] ?>)" class="comanda-button  red-button">
-								<span class="glyphicon glyphicon-remove"></span>
+							
 							</button>
 						</div>
 						<?php

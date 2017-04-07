@@ -28,7 +28,7 @@ class pedidoRecoleccion extends Modulo {
 
     function home() {
         $interlocutor_id_actual = $this->gn->get_data_loged('id_interlocutor'); //id del Interlocutor actual
-        $campos = array('m.' . $this->primary_key . " as ID", 'm.nombre as Mesa', 'm.descripcion as Descripcion', 'm.mesero_id as Mesero', 'm.orden as Orden', 'est.descripcion as Estado');
+        $campos = array('m.' . $this->primary_key . " AS ID", 'm.nombre as Mesa', 'm.descripcion as Descripcion', 'm.mesero_id as Mesero', 'm.orden AS Orden', 'est.descripcion AS Estado');
         $tablas = $this->nombre_tabla . ' m, fw_estado est';
         $this->pintar_mesas($campos, $tablas, $this->modulo);
         //$this->iniciar_maestro_directo($campos, $tablas,$this->modulo);

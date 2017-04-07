@@ -6,7 +6,7 @@ class Comandas extends Modulo {
     	$id_interlocutor=$this->gn->get_data_loged('id_interlocutor');
     	$campos=array("m.nombre as mesa","p.id_pedido","p.mesero_id as mesero");       
         $tables='mesa m, pedido p,fw_estado est, fw_interlocutor_condicion ic';
-        $condicion="m.id_mesa=p.mesa_id and p.estado_id IN (15, 16) and est.id_estado=p.estado_id and p.interlocutor_id=$id_interlocutor AND ic.interlocutor_id=p.interlocutor_id AND ic.marca_blanca=".$marcablanca;
+        $condicion="m.id_mesa=p.mesa_id and p.estado_id IN (15, 16) AND est.id_estado=p.estado_id AND p.interlocutor_id=$id_interlocutor AND ic.interlocutor_id=p.interlocutor_id AND ic.marca_blanca=".$marcablanca;
         $datos_pedidos=$this->db->select($campos,$tables,$condicion,'mesa_id');
         
         $tables="producto p, pedido_item pi,pedido pe,observacion o, fw_interlocutor_condicion ic";
@@ -28,6 +28,7 @@ class Comandas extends Modulo {
 					'pi.cantidad',
 					'pi.estado_id'),
 				$tables,$condicion,'mesa_id', false, false);
+        sort($pedidos);
         
         if(!$pedidos){
             $tables="producto p, pedido_item pi,pedido pe, fw_interlocutor_condicion ic";
@@ -41,11 +42,13 @@ class Comandas extends Modulo {
             	$pedido_orden[$id]['items'][]=$pedido;
             }     
         }
+        //sort($campos);
 		if($datos_pedidos){
             foreach ($datos_pedidos as  $pedido) {
             	$pedido_orden[$pedido['id_pedido']]['datos']=$pedido;
             }     
         }
+        //sort($pedido_orden);
         require_once($this->get_view_path());
         comandasHTML::home($pedido_orden, $this->modulo);
     }

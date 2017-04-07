@@ -36,6 +36,10 @@
     padding:5px;
     right: 10%;
     text-align: center;
+    min-width: 500px !important;
+    min-height: 320px !important;
+    max-height: 320px !important;
+    overflow-y: scroll;
 }
 .comanda-pedido .comanda-button{
     -webkit-border-radius: 20% !important;
