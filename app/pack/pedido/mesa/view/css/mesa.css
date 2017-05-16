@@ -1,0 +1,494 @@
+.mesas_contenedor{	
+    cursor: pointer;
+    float: left;
+    height: 100px;
+    margin: 12px 8px;
+    overflow: hidden;
+    position: relative;
+}
+.vista_mesas .mesas_contenedor{	
+    -webkit-border-radius: 50px;
+    -moz-border-radius:    50px;
+    border-radius:         50px;
+    width: 100px;
+}
+@media (max-width: 300px) {
+    .mesas_contenedor {
+
+    }
+}
+.centra-contenido{
+    display: flex !important;
+    justify-content: center !important;
+}
+.vista_mesas .item-mesa{
+    background: #fff;
+}
+.item-mesa{
+    height: 100%;
+    padding: 10%;
+    width: 100%;
+}
+#zona_0 .mesas_contenedor {
+    background-image: url("../../../../../../media/img/mesas.png");
+    background-size: 70px 35px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px 6px 2px rgba(0, 0, 0, 0.2);
+    padding: 0;
+    width: 140px;
+}
+#zona_0 .mesas_contenedor .mesa-estado, 
+#zona_0 .mesas_contenedor .mesa-icono{
+    display: none;
+}
+.vista_mesas .mesas_contenedor, 
+.vista_mesas .item-mesa {
+    -webkit-border-radius: 50px;
+    -moz-border-radius:    50px;
+    border-radius:         50px;
+    -webkit-box-shadow: 2px 2px 2px 2px  rgba(0, 0, 0, 0.6);
+    -moz-box-shadow:    2px 2px 2px 2px  rgba(0, 0, 0, 0.6);
+    box-shadow:         2px 2px 2px 2px  rgba(0, 0, 0, 0.6);
+}
+.mesa-icono{
+    float: unset;
+    margin: 15px auto 0;
+    overflow: hidden;
+    width: 55px
+}
+.mesa-icono > img{
+    height: 50px;
+    margin: 0 auto;
+    width: 55px;
+}
+.tables-toolbar{
+    margin:5px;
+    display:inline-block;
+}
+.mesa-estado > img{
+    height: 30px;
+    width: 30px;;
+}
+.vista_mesas #texto-mesa{
+    background-color: #124085;
+    bottom: 0;
+    -webkit-box-shadow: 2px 2px 36px 0 rgba(0, 0, 0, 0.6) inset;
+    -moz-box-shadow:    2px 2px 36px 0 rgba(0, 0, 0, 0.6) inset;
+    box-shadow:         2px 2px 36px 0 rgba(0, 0, 0, 0.6) inset;
+    color: #eee;
+    height: 30%;
+    left: 5%;
+    position: absolute;
+    text-align: center;
+    width: 90%;
+}
+#zona_0 #texto-mesa{
+    background-color: rgba(18, 64, 163, 0.85);
+    bottom: 0;
+    color: #eee;
+    font-weight: bold;
+    height: 30%;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+.mesa-estado{
+    position: absolute;
+    right: 20px;
+    top: 3px;
+    width: 30px;
+}
+
+.tables_container{	
+    margin: 0 auto;
+    overflow:hidden;
+    padding: 1%;
+    width: 100%;
+}
+
+.aside_vertical.facturar{
+    float: left;
+    width: 100% !important;
+}
+.aside_vertical.facturar .mesas_contenedor {
+    height: 80px !important;
+    width: 80px !important;
+}
+#subarea_trabajo {
+    float: left;
+    margin: 0;
+    min-width: 450px;
+    padding: 1%;
+    width: 100%;
+}
+.header-section p{
+    font-family: georgia;
+    font-size: 12pt;
+    font-weight: bold;	
+    margin: 0;
+    padding-left:5px;
+}
+.tabla-factura{
+    border:1px dashed;
+}
+
+
+/*--------------------------------------------------------   ACORDEON   ---------------------------------------------------------------------*/
+
+.menu_header p{
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    font-family: georgia;
+    font-weight: bold;
+    color: #6E401A;
+    text-shadow: 2px 2px rgba(173, 150, 126, 0.87);
+}
+.menu-categoria-productos {
+    background: #555 none repeat scroll 0 0;
+    float: left;
+    height: 100vh;
+    width: 15%;
+}
+.menu-categoria-productos #lista-categoria-productos {
+    width: 15%;
+}
+.menu-categoria-productos #lista-categoria-productos > li{
+    list-style: outside none none;
+}
+.menu_productos{
+    background: #999 none repeat scroll 0 0;
+    float: left;
+    height: 100vh;
+    width: 50%;
+}
+.menu_productos > ul {
+    display: block;
+    overflow: hidden;
+}
+.menu_productos ul li{
+    list-style: outside none none;
+    overflow: hidden;
+}
+/*----------------------------------Productos----------------------------------*/
+.item_productos{
+    font-family: verdana;
+    font-size:12pt;
+    color:#030A6B;
+    border:solid #3E036B;
+}
+#titulo_producto{
+    position:relative;
+    width: 100%;
+
+}
+.configuracion_imagen{
+    float:left;
+}
+.seleccionar_file{
+    float:left;
+    padding-top: 40px;
+    border:none !important;
+}
+#titulo_producto p{
+    color:#FFF;
+    position:relative;
+    font-weight: bold;
+    font-family: Serif;
+    margin-left: 50px;
+    width:40%;
+}
+.preview_productos{
+    display:none;
+}
+#producto_img{
+    position:relative;
+    width:100%;
+}
+#producto_img img{
+    display:none;
+    position:static;
+    float:left;
+    padding-left:50px;
+}
+#encabezado_producto{
+    display:none;
+}	
+.boton_ocultar{
+    color:#FFF;
+    border:solid #FFF;
+    position:absolute;
+    float:right;
+}
+.producto_view{	
+    background: #4c4c4c; /* Old browsers */
+    background: -moz-linear-gradient(top,  #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #000000 49%, #000000 49%, #2c2c2c 50%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4c4c4c), color-stop(12%,#595959), color-stop(25%,#666666), color-stop(39%,#474747), color-stop(49%,#000000), color-stop(49%,#000000), color-stop(50%,#2c2c2c), color-stop(60%,#111111), color-stop(76%,#2b2b2b), color-stop(91%,#1c1c1c), color-stop(100%,#131313)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#000000 49%,#000000 49%,#2c2c2c 50%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#000000 49%,#000000 49%,#2c2c2c 50%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#000000 49%,#000000 49%,#2c2c2c 50%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#000000 49%,#000000 49%,#2c2c2c 50%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 ); /* IE6-9 */
+    height:200px;
+    list-style: none;	
+    margin: 0 auto;
+    padding: 0;
+    width: 50%;
+}
+.producto_view .opcion-button{
+    float:left;
+}
+
+#product{
+    margin: 5px 0;
+    overflow: hidden;
+    width: 100%;
+}
+#producto_name{
+    margin-right: 15px;
+}
+
+#producto_descripcion{
+    display:none;
+    color:#FFF;
+    position:relative;
+    font-family: console;
+    float:left;
+    margin-left: 20px;
+    margin-right: 50px;
+}
+.producto_nombre_corto {
+    vertical-align: sub;
+}
+/*--------------------------------------------Pedido--------------------------------------*/
+.cerrar_pedido{
+    width:60px !important;
+    border-radius: 0 !important;
+
+}
+.cerrar_pedidos{
+    float:left;
+    margin-bottom: 20px;
+    margin-left: 150px;
+}
+#ver-pedido-container{
+    padding-top:30px;
+}
+.preview-boton{
+    margin-left: 5px;
+    float:left;
+    background:red;
+    color:#FFF;
+    border:5px solid #AAA;
+}
+
+#pedido-lista-oculto{
+    width:340px;
+    height:400px;
+    background-color:#594C4C;
+    position:absolute;
+    float:right;
+    right:0;
+}
+
+#cuerpo-pedido{	
+    height:80%;
+    border:solid #AAA;
+    width:95%;
+    margin:0 auto;
+}
+.ocultar-pedido{
+    float:right;
+}
+.mostrar-pedido{
+    display:none;
+}
+.encabezado-pedido{
+    color:#FFF;
+    width:80%;	
+    margin:0 auto;
+    float:left;
+    overflow:hidden;
+}
+#head-pedido{
+    width:100%;
+    height: 30px;
+    border:solid #AAA;
+}
+.pedido-columna{
+    float: left;
+    margin: 0 1px;
+    position: relative;
+    text-align: center;
+    width: 10%;
+}
+.pedido-fila.pedido-header {
+    background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+    color: #eee;
+    font-weight: bold;
+    margin: 0 0 4px;
+    padding: 1% 0;
+}
+#cuerpo-pedido  .pedido-costo{	
+    width:40px !important;	
+}
+#cuerpo-pedido  .pedido-precio{	
+    width:60px !important;	
+}
+#cuerpo-pedido .pedido-fila{
+    width:100%;
+    display:inline-block;
+}
+.cantidad-columna{
+    width:auto;
+}
+.pedido-columna p{
+    line-height: 15px;
+}
+.total-pedidos .letra-total {
+    float: left;
+    font-family: arial;
+    min-width: 160px;
+    padding: 0 5px;
+    text-align: right;
+    width: auto;
+}
+.total-pedidos .letra-resumen {
+    font-size: 14px;
+}
+.total-pedidos .letra-valor-final {
+    font-size: 16px;
+}
+.smaller{
+    margin: 0 5px 35px;
+    float:left;
+    height:20px !important;
+    width:100px !important;
+
+}
+.smaller p{	
+    line-height: 15px !important;
+}
+
+.red-button{
+    background-color: red;
+    border-radius: 50%;
+    border:solid #AAA;		
+    color:#FFF;
+    cursor:pointer;
+    font-size: 9pt;
+    float:left;
+    height:auto;		
+    margin-left: 8px;
+    min-height: 25px;
+    text-align: center;	
+    width:25px;
+}
+#encabezado_producto-preview{
+    font-family: georgia;
+    font-size: 12pt;
+    font-weight: bold;
+    color:#FFF;
+    padding:7px;
+    text-transform: uppercase;
+    /*text-shadow: 3px 3px 2px rgba(185, 210, 210, 1);*/
+}
+#pedido-lista > .total{
+    position:absolute;
+    font-size: 9pt;
+    margin-left: 5px;
+    margin-top: 5px;
+    float:left;
+    color:#FFF;
+}
+
+.encabezado-pedido p{
+    margin-left:10px;
+    margin-top:2px;
+    margin-bottom:1px;
+    width:100%;
+    float:left;
+    color:#FFF;
+    font-weight: bold;
+}
+.productos_container{
+    border: 1px solid #AAA;
+    background-color: transparent;
+    display: inline-block;
+    margin-top:50px;
+    margin:0 auto;
+    min-width: 100px;
+    min-height:80px;
+    padding: 3px;
+    width:95%;
+}
+#pedido_producto_form #pedidos_container_ver, 
+#pedido_producto_form > .facturar_resumen {
+    border-bottom: 2px solid #ccc;
+    margin: 0 0 15px;
+    overflow: hidden;
+}
+.total{
+    margin-left:15px;
+    float:left;
+    color:#FFF;
+    font-size:9pt;
+}
+.texto-datos-pedido{
+    margin:1px;
+    color:#FFF;
+}
+.factura_cabecera {
+    float: left;
+    margin: 0 0 20px;
+    overflow: hidden;
+    width: 100%;
+}
+.factura_cabecera .factura_cuenta_numero > p {
+    color: rgb(169, 15, 15);
+    font-family: arial;
+}
+.factura_cabecera .factura_cuenta p{
+    font-size: 20px;
+}
+.productos_container .pedido-fila{
+    width:100%;
+    display:inline-block;
+}
+.productos_container  .pedido-costo{	
+    width:50px !important;	
+}
+#pedidos_container_ver .estado-pedido{
+    float:right !important;
+}
+.productos_container .estado-pedido{
+    float:right !important;
+}
+.total-pedidos{
+    font-weight: bold;
+    padding-left: 15px;
+    float:left;
+    color:#222;
+    bottom:0;
+    width: 100%;
+}
+#pedidos_container_ver .removeBoton a{
+    cursor:pointer;
+}
+.imprimir-hide{
+    display:none;
+}
+#pedido_producto_form ul{
+    background: #ccc none repeat scroll 0 0;
+    margin: 0 5px 10px;
+    padding: 5px;
+}
+#factura_resumen_totales .letra-total.letra-resumen {
+    margin: 8px 0;
+}
+.total-pedidos > #factura_servicio {
+    font-size: 20px;
+    text-align: right;
+}

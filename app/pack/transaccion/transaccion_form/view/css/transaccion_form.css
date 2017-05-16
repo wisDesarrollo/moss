@@ -1,0 +1,114 @@
+#contenedor_compras{
+    float: left;
+    font-size: 14px;
+    margin: 0 30px 0 0;
+    padding: 0;
+    width: 230px;
+}
+
+#contenedor_compras label{
+    background-image: url("../temas/tema_comred/aside/boton_uno.png");
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+}
+#contenedor_compras label:hover{
+    background-image: url("../temas/tema_comred/aside/hover/boton_uno.png");
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+}
+
+/*#contenedor_compras fieldset{
+    border-color:#CCC;
+    border-style: solid;
+}*/
+
+#contenedor_formulario_compra{
+    height: 310px;
+    /*margin: 1px 5px;*/
+    padding: 0;
+    position: relative;
+    /*width: 406px;*/
+}
+
+#titulo_compras{
+    height: 30px;
+    margin-left: 70px;
+    width: 255px;
+}
+
+legend p{
+    font-size: 17px;
+    line-height: 30px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#contenedor_formulario_compra .elemento_formulario{
+    height: auto;
+    margin: 1px 0 10px;
+    padding: 0;
+    width: 100%;
+}
+#contenedor_formulario_compra label{ 
+    float: left;
+    font-size: 18px;
+    height: 20px;
+    margin: 2px 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+#contenedor_formulario_compra #valor,#id_banco{
+    display: table-caption;
+    font-size: 20px;
+    height: 35px;
+    margin: 0 auto;
+    text-align: center;
+    min-width: 45%;
+}
+#contenido_formulario{
+    margin-top: 25px;
+}
+#contenedor_formulario_compra button{
+    height: 45px;
+    margin: 20px 0 0 104px;
+    padding: 0;
+    width: 45px;
+}
+
+.producto_activo h3{
+    background: -moz-linear-gradient(top,  rgba(221,221,221,0.26) 0%, rgba(68,68,68,0.67) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(221,221,221,0.26)), color-stop(100%,rgba(68,68,68,0.67))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(221,221,221,0.26) 0%,rgba(68,68,68,0.67) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(221,221,221,0.26) 0%,rgba(68,68,68,0.67) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(221,221,221,0.26) 0%,rgba(68,68,68,0.67) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(221,221,221,0.26) 0%,rgba(68,68,68,0.67) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#42dddddd', endColorstr='#ab444444',GradientType=0 ); /* IE6-9 */
+    color: #00F;
+    font-weight: bold;
+}
+
+.item_proveedor{
+    background: none repeat scroll 0 0 #000000;
+    /*background-image: url("titulo.png");
+    border: 1px solid #cccccc;*/
+    /*border-radius: 5px;*/
+    color: #fdeb43;
+    float: left;
+    font-weight: bold;
+     margin: 10px 10px 20px;
+    padding: 5px;
+
+}
+
+.item_proveedor:hover{
+    /*opacity: 0.5;*/
+    color: white;
+
+}
+
+
+#proveedores_compras{
+    margin: 10px;
+    
+}

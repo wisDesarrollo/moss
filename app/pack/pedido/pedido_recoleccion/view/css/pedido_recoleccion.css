@@ -1,0 +1,287 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 6/11/2016, 08:18:47 PM
+    Author     : Soldier
+*/
+.tab_plugin_container{
+    float: left;
+    margin: 0;
+    min-height: 350px;
+}
+#pedido_cliente_contenedor{
+    border: 1px solid #ddd;
+    float: left;
+    height: 81%;
+    min-height: 350px;
+    min-width: 250px;
+    position: relative;
+}
+#pedido_cliente_contenedor .tab_hidden_content {
+    background: #ccc none repeat scroll 0 0;
+    border: 1px solid #bbb;
+    border-radius: 0 5px 5px 0;
+    padding: 10px;
+    position: absolute;
+    right: -38px;
+}
+
+@media (max-width: 450px) {
+    #pedido_cliente_contenedor{
+        min-height: 350px;
+        width: 82%;
+    }
+    .tab_plugin_container{
+        width: 82%;
+    }
+}
+
+@media (min-width: 451px) {
+    #pedido_cliente_contenedor{
+        min-height: 600px;
+    }
+    #pedido_cliente_contenedor .tab_hidden_content {
+        display: none;
+    }
+}
+
+@media (min-width: 451px) and (max-width: 768px) {
+    #pedido_cliente_contenedor{
+        width: calc(82% - 25px);
+    }
+    .tab_plugin_container{
+        width: calc(64% - 25px);
+    }
+}
+@media (min-width: 769px) {
+    #pedido_cliente_contenedor{
+        width: calc(24% - 25px);
+    }
+    .tab_plugin_container{
+        width: calc(70% - 25px);
+    }
+}
+
+.categoria_item > ul {
+    margin: 0 2%;
+}
+.producto_item {
+	background: rgba(1, 149, 135, 0.55) none repeat scroll 0 0;
+    border-radius: 20px 0;
+    box-shadow: 1px 1px 7px -2px #888;
+    cursor: pointer;
+    float: left;
+    list-style: outside none none;
+    margin: 0 10px 10px 0;
+    min-width: 100px;
+    overflow: hidden;
+    width: 100px;
+}
+.producto_item p{
+    font-size: 15px;
+    font-weight: bold;
+    height: 70px;
+    margin: 0 auto;
+    min-height: 50px;
+    overflow: hidden;
+    padding: 5%;
+    text-align: center;
+} 
+.producto_item .producto_costo {
+    background: rgb(100, 150, 240) none repeat scroll 0 0;
+	-webkit-box-shadow: 0 4px 11px -8px #000;
+	box-shadow:			0 4px 11px -8px #000;
+    color: #fff;
+    font-size: 100%;
+    font-weight: bold;
+    padding: 5% 2px;
+    text-align: center;
+    width: 100%;
+}
+.producto_item .producto_imagen {
+	background: rgb(230, 230, 230) none repeat scroll 0 0;
+    height: 90px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+.producto_imagen > img {
+    left: 0;
+    position: absolute;
+    top: -50%;
+}
+/*FACTURA*/
+.wis_factura > ul > li {
+    list-style: outside none none;
+}
+.wis_factura_line {
+    height: 50px;
+	overflow: hidden;
+    width: 100%;
+}
+#wis_factura_item_container > li {
+    overflow: hidden;
+}
+.wis_factura_line_item{
+	border-bottom: 1px solid #ccc;
+    height: auto;
+    margin: 0 1%;
+    overflow: hidden;
+    padding: 2%;
+    width: 98% !important;
+}
+.wis_factura > ul#wis_factura_item_container {
+    float: left;
+    /*TODO: LINEA TEMPORAL*/
+    margin: 50px 0 0px 0;
+    overflow-y: scroll;
+}
+@media (max-height: 600px) {
+    .wis_factura > ul#wis_factura_item_container {
+        max-height: 300px;
+    }
+}
+@media (min-height: 601px) {
+    .wis_factura > ul#wis_factura_item_container {
+        max-height: 400px;
+    }
+}
+@media (max-width: 600px) {
+    .wis_factura > ul#wis_factura_item_container {
+        width: 500px;
+    }
+}
+@media (max-width: 600px) {
+    .wis_factura > ul#wis_factura_item_container {
+        width: 100%;
+    }
+}
+.wis_factura_line.accion_boton {
+	background: #ddd none repeat scroll 0 0;
+    position: absolute;
+    top: 0;
+}
+#wis_factura_item_container .wis_factura_line {
+	cursor: pointer;
+}
+.wis_factura_line.accion_boton > p {
+    color: rgb(51, 155, 183);
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 50px;
+	margin: 0;
+    padding: 0 3%;
+    text-align: right;
+}
+
+#wis_factura_item_container .wis_factura_line:hover > .wis_factura_desc .desc_producto,
+#wis_factura_item_container .wis_factura_line:hover > .wis_factura_desc .desc_producto span,
+#wis_factura_item_container .wis_factura_line:hover,
+#wis_factura_item_container .wis_factura_line.selected, 
+#wis_factura_item_container .wis_factura_line.selected .wis_factura_desc .desc_producto{
+    background: rgba(0, 130, 165, 0.8) none repeat scroll 0 0;
+	color: #fff;
+}
+.wis_factura_line.accion_boton > button {
+    float: left;
+    margin: 5px 5%;
+}
+
+.wis_factura_line .wis_factura_desc {
+    float: left;
+    width: 70%;
+}
+
+.wis_factura_line .wis_factura_subtotal {
+	float: right;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: right;
+    width: 28%;
+}
+.wis_factura_line .desc_producto {
+	background: #f0f0f6 none repeat scroll 0 0;
+    color: rgb(0, 130, 165);
+	font-size: 13px;
+    font-weight: bold;
+	overflow: hidden;
+	padding: 2%;
+}
+.wis_factura_line .desc_producto > p {
+    float: left;
+    margin: 0 !important;
+    width: 100%;
+}
+.wis_factura_line .desc_producto .input-group {
+    border: 1px solid #999;
+    float: left;
+    margin: 0 0 0 5%;
+    overflow: hidden;
+    width: 40%;
+}
+.wis_factura_line .desc_producto .btn.waves-effect.waves-light.btn-primary {
+    border: 0 none;
+    border-radius: 0;
+    padding: 6px !important;
+}
+.wis_factura_line .valor_unitario {
+    float: left;
+	font-size: 11px;
+	padding: 3px 0;
+}
+.factura_resumen {
+    background: rgb(255, 255, 255) none repeat scroll 0 0;
+	border-top: 3px solid #666;
+    bottom: 0;
+	/*TODO: TEMPORAL*/
+	display:none;
+    float: right;
+    position: absolute;
+    text-align: right;
+    width: 100%;
+}
+.factura_resumen .factura_resumen_control{
+    float: left;
+    height: 100%;
+    width: 40%;
+}
+.factura_resumen .factura_resumen_datos{
+    float: left;
+    height: 100%;
+    width: 60%;
+}
+.factura_resumen p {
+    float: left;
+	margin: 0 !important;
+    padding-right: 4px;
+	width: 100%;
+}
+.factura_resumen .wis_factura_subtotal {
+    font-size: 13px;
+	font-weight: bold;
+}
+.factura_resumen .wis_factura_total_complemento {
+    font-size: 10px;
+}
+.factura_resumen .wis_factura_total {
+    font-size: 20px;
+    font-weight: bold;
+}
+.factura_resumen .wis_factura_total span{
+    color: rgb(51, 155, 183);
+}
+
+#pedido_cliente_contenedor #pedido_toolbar_2 {
+    bottom: 0;
+    margin: 4px;
+    position: absolute;
+}
+.pedido_list_obs{
+    color: #000;
+    margin: 6%;
+    width: 100px;
+}

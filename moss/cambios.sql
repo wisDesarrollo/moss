@@ -1,1 +1,0 @@
-ALTER TABLE `factura_numeracion` ADD `fecha` DATE NOT NULL AFTER `factura_maximo`;
